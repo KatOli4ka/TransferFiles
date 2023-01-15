@@ -1,4 +1,4 @@
-package pro.sky.datafiles.controller;
+package pro.sky.transferfiles.controller;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
@@ -6,13 +6,13 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import pro.sky.datafiles.models.Ingredient;
-import pro.sky.datafiles.services.IngredientService;
-import pro.sky.datafiles.services.ValidateService;
+import pro.sky.transferfiles.models.Ingredient;
+import pro.sky.transferfiles.services.IngredientService;
+import pro.sky.transferfiles.services.ValidateService;
 
 import java.util.Map;
 
-@Tag(name = "IngredientController", description = "API для игредиентов")
+@Tag(name = "IngredientController", description = "API для ингредиентов")
 @RestController
 @RequestMapping("/ingredient")
 public class IngredientController {
