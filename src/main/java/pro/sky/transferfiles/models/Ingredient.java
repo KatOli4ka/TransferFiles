@@ -1,4 +1,4 @@
-package pro.sky.datafiles.models;
+package pro.sky.transferfiles.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

@@ -1,10 +1,10 @@
-package pro.sky.datafiles.services;
+package pro.sky.transferfiles.services;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.stereotype.Service;
-import pro.sky.datafiles.models.Recipe;
+import pro.sky.transferfiles.models.Recipe;
 
 import javax.annotation.PostConstruct;
 import java.util.HashMap;

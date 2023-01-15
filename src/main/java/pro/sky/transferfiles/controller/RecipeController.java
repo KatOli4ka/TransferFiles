@@ -1,4 +1,4 @@
-package pro.sky.datafiles.controller;
+package pro.sky.transferfiles.controller;
 
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
@@ -6,12 +6,9 @@ import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
-import pro.sky.datafiles.models.Recipe;
-import pro.sky.datafiles.services.FilesService;
-import pro.sky.datafiles.services.RecipeService;
-import pro.sky.datafiles.services.ValidateService;
-
+import pro.sky.transferfiles.models.Recipe;
+import pro.sky.transferfiles.services.RecipeService;
+import pro.sky.transferfiles.services.ValidateService;
 
 import java.util.Map;
 

@@ -1,10 +1,10 @@
-package pro.sky.datafiles.services;
+package pro.sky.transferfiles.services;
 
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
-import pro.sky.datafiles.models.Ingredient;
-import pro.sky.datafiles.models.Recipe;
+import pro.sky.transferfiles.models.Ingredient;
+import pro.sky.transferfiles.models.Recipe;
 
 @Service
 public class ValidateService {

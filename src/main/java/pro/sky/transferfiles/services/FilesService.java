@@ -1,8 +1,9 @@
-package pro.sky.datafiles.services;
+package pro.sky.transferfiles.services;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
@@ -54,7 +55,7 @@ public class FilesService {
         }
     }
 
-    private boolean cleanDataFileIngredients() {
+    public boolean cleanDataFileIngredients() {
         try {
             Path path = Path.of(dataFileIngredientsPath, dataFileIngredientsName);
             Files.deleteIfExists(path);
@@ -66,7 +67,7 @@ public class FilesService {
         }
     }
 
-    private boolean cleanDataFileRecipes() {
+    public boolean cleanDataFileRecipes() {
         try {
             Path path = Path.of(dataFileRecipesPath, dataFileRecipesName);
             Files.deleteIfExists(path);
@@ -76,6 +77,14 @@ public class FilesService {
             e.printStackTrace();
             return false;
         }
+    }
+
+    public File getIngredientsFile() {
+        return new File(dataFileIngredientsPath + "/" + dataFileIngredientsName);
+    }
+
+    public File getRecipesFile() {
+        return new File(dataFileRecipesPath + "/" + dataFileRecipesName);
     }
 
 
